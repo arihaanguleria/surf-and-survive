@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf & survive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Surf & survive</h1>
+    <div id="ui">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 0s</span>
+        <span id="wind">Wind: →</span>
+        <span id="wind-meter"> | Interval: 1.00s</span>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="restart-overlay" style="display:none;">
+        <div id="restart-box">
+            <h2>Game Over!</h2>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+    <div id="win-overlay" style="display:none;">
+        <div id="win-box">
+            <h2>Congratulations you have won the game!!!</h2>
+            <button id="win-restart-btn">Restart Game</button>
+        </div>
+    </div>
+    <button id="freeplay-toggle">Freeplay Mode: Off</button>
+    <script src="game.js"></script>
+</body>
+</html>
